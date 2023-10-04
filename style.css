@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+nav ul li{
+    padding: 0 12px;
+   
+}
+.container{
+    min-height: 75vh;
+    background-color:black;
+    color: white;
+    font-family: 'Varela Round', sans-serif; 
+    display: flex;
+    width: 80%;
+    margin: 23px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-image: url('spotify/bg.jpg');
+   
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#myProgressBar{
+    width: 80vw;
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+   bottom: 0;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   color: white;
+   flex-direction: column;
+}
+.icons{
+    margin-top: 10px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItem{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    color: black;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    border-radius: 30px;
+
+
+}
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 30px;
+}
+.timestamp{
+    margin: 0 12px;
+}
+.songcontainer{
+    padding: 40px 30px;
+}
+.m{
+    position: absolute;
+    left: 9vw;
+   
+    
+}
+.m img{
+    height: 20px;
+    width: 50px;
+    padding-top: 30px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.q{
+    width: 50%;
+    display: flex;
+    
+}
+.a{
+   color: white;
+}
