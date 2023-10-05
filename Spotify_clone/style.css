@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+nav ul li{
+    padding: 0 12px;   
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+.container{
+    min-height: 75vh;
+    background-color:black;
+    color: white;
+    font-family: 'Varela Round', sans-serif; 
+    display: flex;
+    width: 80%;
+    margin: 23px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-image: url('spotify/bg.jpg');
+   
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#myProgressBar{
+    width: 80vw;
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   color: white;
+   flex-direction: column;
+}
+.icons{
+    margin-top: 10px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItem{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    color: black;
+    height: 50px;
+    align-items: center;
+    gap: 0.2rem;
+    margin: 12px 0;
+    border-radius: 30px;
+    padding:0.2rem
+}
+.songItem img{
+    width: 43px;
+    border-radius: 30px;
+    margin-right: 0.25rem;
+}
+.songlistplay {
+    display: flex;
+    gap: 0.25rem;
+    position: absolute;
+    right: 0.6rem;
+}
+
+.songcontainer{
+    padding: 40px 30px;
+}
+.m{
+    position: absolute;
+    left: 9vw;
+   
+    
+}
+.m img{
+    height: 20px;
+    width: 50px;
+    padding-top: 30px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.q{
+    width: 50%;
+    display: flex;
+    
+}
+.a{
+   color: white;
+}
+
+@media screen and (max-width:40em) {
+
+    .container {
+        width: 95%;
+    }
+    .songcontainer {
+        width: 100%;
+        padding: 0;
+    }
+
+    .songcontainer > div {
+        width: 100%;
+    }
+
+    .songList > h1 {
+        font-size: 25px;
+    }
+}
