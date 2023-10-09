@@ -6,13 +6,14 @@ body{
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 nav{
     font-family: 'Ubuntu', sans-serif;
 }
 nav ul{
     display: flex;
-    list-style-type: none;
+    list-style: none;
     height: 60px;
     background-color: black;
     color: white;
@@ -29,9 +30,17 @@ nav ul{
     font-size: 1.3rem;
 }
 nav ul li{
-    padding: 0 12px;
-   
+    padding: 0 12px;   
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
 .container{
     min-height: 75vh;
     background-color:black;
@@ -55,7 +64,7 @@ nav ul li{
     position: sticky;
     height: 130px;
     background-color: black;
-   bottom: 0;
+    bottom: 0;
    align-items: center;
    display: flex;
    justify-content: center;
@@ -69,26 +78,30 @@ nav ul li{
     cursor: pointer;
 }
 .songItem{
-    display: flex;
+    position: relative;
     width: 100%;
+    display: flex;
     background-color: white;
     color: black;
     height: 50px;
-    justify-content: space-between;
     align-items: center;
+    gap: 0.2rem;
     margin: 12px 0;
     border-radius: 30px;
-
-
+    padding:0.2rem
 }
 .songItem img{
     width: 43px;
-    margin: 0 23px;
     border-radius: 30px;
+    margin-right: 0.25rem;
 }
-.timestamp{
-    margin: 0 12px;
+.songlistplay {
+    display: flex;
+    gap: 0.25rem;
+    position: absolute;
+    right: 0.6rem;
 }
+
 .songcontainer{
     padding: 40px 30px;
 }
@@ -112,4 +125,23 @@ nav ul li{
 }
 .a{
    color: white;
+}
+
+@media screen and (max-width:40em) {
+
+    .container {
+        width: 95%;
+    }
+    .songcontainer {
+        width: 100%;
+        padding: 0;
+    }
+
+    .songcontainer > div {
+        width: 100%;
+    }
+
+    .songList > h1 {
+        font-size: 25px;
+    }
 }
